@@ -1,5 +1,5 @@
 const app = require("./app");
-
+const connectDatabase = require("./db/Database");
 
 // handling uncaught Excaption
 process.on("uncaughtException", (err) => {
@@ -16,7 +16,7 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
   }
 
 
-//connect database
+// connect db
 connectDatabase();
 
 
