@@ -1,5 +1,5 @@
 const app = require("./app");
-
+const connectDatabase = require("./db/Database");
 
 // handling uncaught Excaption
 process.on("uncaughtException", (err) => {
@@ -16,7 +16,7 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
   }
 
 
-//connect database
+// connect db
 connectDatabase();
 
 
@@ -31,12 +31,12 @@ const server = app.listen(process.env.PORT, () => {
   });
   
 
-// unhandled  promise rejection
+// unhandled promise rejection
 process.on("unhandledRejection", (err) => {
-    console.log(`Shutting down the server for ${err.message}`);
-    console.log(`shutting down the server for unhandle promise rejection`);
-  
-    server.close(() => {
-      process.exit(1);
-    });
+  console.log(`Shutting down the server for ${err.message}`);
+  console.log(`shutting down the server for unhandle promise rejection`);
+
+  server.close(() => {
+    process.exit(1);
   });
+});
