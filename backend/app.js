@@ -8,6 +8,7 @@ const bodyParser = require("body-parser");
 
 app.use(express.json());
 app.use(cookieParser());
+app.use("/",express.static("uploads"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
