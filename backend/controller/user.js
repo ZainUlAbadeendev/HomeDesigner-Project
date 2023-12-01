@@ -10,21 +10,32 @@ const catchAsyncErrors = require("../middleware/catchAsyncErrors")
 const sendToken = require("../utilsjwtToken/")
 
 
-// create user
 router.post("/create-user", upload.single("file"), async (req, res, next) => {
+  try {
+    const { name, email, password } = req.body;
+    const userEmail = await User.findOne({ email });
 
-      const { name, email, password } = req.body;
-      const userEmail = await User.findOne({ email });
-  
-      if (userEmail) {
-        const filename = req.file.filename;
-        const filePath = upLoads/$(filename);
-        fs.unlink(filePath, (err) => {
-          if(err){
-            console.log(err);
-            res.status(500).json({message:"Error Deleting file"});
-          }});
-      
+    if (userEmail) {
+      const filename = req.file.filename;
+      const filePath = `uploads/${filename}`;
+      fs.unlink(filePath, (err) => {
+        if (err) {
+          console.log(err);
+          res.status(500).json({ message: "Error deleting file" });
+        }
+      });
+      return next(new ErrorHandler("User already exists", 400));
+    }
+
+    const filename = req.file.filename;
+    const fileUrl = path.join(filename);
+
+    const user = {
+      name: name,
+      email: email,
+      password: password,
+      avatar: fileUrl,
+    };
       
           
       
