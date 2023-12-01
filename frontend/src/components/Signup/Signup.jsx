@@ -4,6 +4,7 @@ import styles from "../../styles/styles";
 import { Link } from "react-router-dom";
 import { RxAvatar } from "react-icons/rx";
 import axios from "axios";
+import {Link, UseNavigation } from ""
 import { server } from "../../server";
 
 const Singup = () => {
@@ -20,7 +21,7 @@ const Singup = () => {
   };
   const handleSubmit = async (e) => {
     const config = { headers: { "content-type": "multipart/form-data" } };
-    e.preventDefault();
+    e.prevantDefault();
     const newForm = new FormData();
 
     newForm.append("file", avatar);
@@ -31,6 +32,12 @@ const Singup = () => {
     axios
       .post(`${server}/user/create-user`, newForm, config)
       .then((res) => {
+        alert((res.message);
+      })
+        if(res.data.sucess == true){
+          Navigate("/");
+
+        }
         console.log(res);
       })
       .catch((err) => {
