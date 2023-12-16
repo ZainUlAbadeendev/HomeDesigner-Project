@@ -1,13 +1,17 @@
 {
-  "name": "backend",
+  "name": "home-designer",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": "18.10.0"
+  },
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false"
   },
-  "author": "Usama Hussain",
+  "author": "usama-hussain",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -20,7 +24,8 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.0",
     "multer": "^1.4.5-lts.1",
-    "nodemailer": "^6.9.7",
-    "nodemon": "^2.0.20"
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "stripe": "^12.0.0"
   }
 }
