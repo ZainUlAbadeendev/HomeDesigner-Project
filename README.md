@@ -31,8 +31,8 @@ Technologies Used :
 | **React Icons v4.7.1**             | Library of popular icons for use in React applications.                                                      |
 | **React Lottie v1.2.3**            | Library for adding Lottie animations to the user interface.                                                 |
 | **React Toastify v9.1.1**          | Notification library for displaying messages to users.                                                       |
-| **Timeago.js v4.0.2**              | Library for formatting timestamps into a user-friendly "time ago" format.                                    |
-| **Web Vitals v2.1.4**              | Helps measure and track the performance of the application.                                                   |
+| **tailwindcss**                    | CSS style Framework for styling the frontend element.                                    |
+
 
 ## Backend:
 
@@ -93,6 +93,8 @@ Make sure you have Git and Node.js installed on your machine.
 
 ## Home-Designer
 
-![Local Anesthesia Standee Banner](https://github.com/usamahussaindev/HomeDesigner-Project/assets/118635657/f1b0b37b-462d-4f02-b11b-2ed6a1903755)
+![banner](https://github.com/usamahussaindev/HomeDesigner-Project/assets/118635657/114b1536-3042-46e6-94e0-16c3e54c729a)
+
+
 
 
