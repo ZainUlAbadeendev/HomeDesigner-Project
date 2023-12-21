@@ -2,29 +2,60 @@ import React from 'react'
 
 const Cardfour = () => {
   return (
-    <div>
-      {/* Assessments, Quizzes, Tests */}
-      <div className="mt-20 flex flex-col-reverse md:flex-row items-center md:space-x-10">
-        <div data-aos="fade-right" className="md:w-6/12">
-          <img className="md:w-11/12" src="https://mhaecal.github.io/frontend/img/true-false.png" alt="True False Image" />
-        </div>
-        <div data-aos="fade-left" className="md:w-6/12 md:transform md:-translate-y-20">
-          <h1 className="font-semibold text-darken text-3xl lg:pr-64">Assessments, <span className="text-yellow-500">Quizzes</span>, Tests</h1>
-          <p className="text-gray-500 my-5 lg:pr-52">Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the online gradebook.</p>
-        </div>
-      </div>
+    <section className="bg-gray-50" style={{ fontFamily: "'Proxima Nova', sans-serif" }}>
+      <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+        <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+          <div className="text-gray-500 sm:text-lg">
+            <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">Ultra-realistic 3D Product Configurator</h2>
+            <p className="mb-8 font-light lg:text-xl">Let customers try all of your material and product options in ultra-realistic 3D. Your 3D Product Configurator seamlessly embeds into your website to provide a more engaging and interactive way for customers to understand your product options.</p>
 
-      {/* Class Management Tools for Educators */}
-      <div className="flex flex-col md:flex-row items-center mt-12">
-        <div data-aos="fade-right" className="md:w-5/12">
-          <h1 className="text-darken font-semibold text-3xl leading-tight lg:pr-32"><span className="text-yellow-500">Class Management</span> Tools for Educators</h1>
-          <p className="my-5 lg:pr-14">Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.</p>
+            <ul role="list" className="pt-8 space-y-5 border-t border-gray-200 my-7">
+              <li className="flex space-x-3">
+                <svg className="flex-shrink-0 w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <span className="text-base font-medium leading-tight text-gray-900">Continuous integration and deployment</span>
+              </li>
+              <li className="flex space-x-3">
+                <svg className="flex-shrink-0 w-5 h-5 text-purple-500 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <span className="text-base font-medium leading-tight text-gray-900">Development workflow</span>
+              </li>
+              <li className="flex space-x-3">
+                <svg className="flex-shrink-0 w-5 h-5 text-purple-500 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <span className="text-base font-medium leading-tight text-gray-900">Knowledge management</span>
+              </li>
+            </ul>
+
+            <p className="mb-8 font-light lg:text-xl">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.</p>
+          </div>
+
+          <img className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="https://inhaabit.com/wp-content/uploads/2023/05/3d-product-configurator-gubi.jpg" alt="feature image" />
         </div>
-        <img data-aos="fade-left" className="md:w-7/12" src="https://mhaecal.github.io/frontend/img/gradebook.png" alt="Gradebook Image" />
       </div>
-    </div>
+      <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+        <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+          <img className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="https://inhaabit.com/wp-content/uploads/2023/05/furniture-room-planner.jpg" alt="feature image 2" />
+
+          <div className="text-gray-500 sm:text-lg">
+            <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">We invest in the world’s potential</h2>
+            <p className="mb-8 font-light lg:text-xl">Deliver great service experiences fast - without the complexity of traditional ITSM solutions. Accelerate critical development work, eliminate toil, and deploy changes with ease.</p>
+
+            <ul role="list" className="pt-8 space-y-5 border-t border-gray-200 my-7">
+              <li className="flex space-x-3">
+                <svg className="flex-shrink-0 w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <span className="text-base font-medium leading-tight text-gray-900">Dynamic reports and dashboards</span>
+              </li>
+              <li className="flex space-x-3">
+                <svg className="flex-shrink-0 w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <span className="text-base font-medium leading-tight text-gray-900">Templates for everyone</span>
+              </li>
+              {/* Add more list items as needed */}
+            </ul>
+
+            <p className="font-light lg:text-xl">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   );
-
-}
-
+};
 export default Cardfour
