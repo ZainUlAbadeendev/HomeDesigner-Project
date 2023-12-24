@@ -19,20 +19,22 @@ const HomePage = () => {
     <div>
       <Header activeHeading={1} />
       <Hero />
-      {<Trusted />}
-      {/* {<Headone />} */}
+      {<Cardtwo />}
+      {/* {<Trusted />} */}
+
 
 
 
       {<Cardfour />}
       {<Cardone />}
       {<Cardthree />}
-      {<Cardtwo />}
-      <Categories />
+
+      {<Headone />}
+      {/* <Categories />
       <BestDeals />
       <Events />
-      <Sponsored />
-      <Footer />
+      <Sponsored /> */}
+      {/* <Footer /> */}
 
     </div>
   )
