@@ -7,8 +7,8 @@ const Cardone = () => {
       <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
         <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
           <div className="text-gray-500 sm:text-lg">
-            <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">Ultra-realistic 3D Product Configurator</h2>
-            <p className="mb-8 font-light lg:text-xl">Let customers try all of your material and product options in ultra-realistic 3D. Your 3D Product Configurator seamlessly embeds into your website to provide a more engaging and interactive way for customers to understand your product options.</p>
+            <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">Instant Augmented Reality</h2>
+            <p className="mb-8 font-light lg:text-xl">Augmented Reality completes the sales process by allowing customers to try your products in their space. With realistic sizing and materials, AR increases purchase confidence by allowing customers to see how a product impacts in their space, see which material is best and place it in the ideal position.</p>
 
             <ul role="list" className="pt-8 space-y-5 border-t border-gray-200 my-7">
               <li className="flex space-x-3">

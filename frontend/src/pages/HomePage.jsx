@@ -20,7 +20,7 @@ const HomePage = () => {
       <Header activeHeading={1} />
       <Hero />
       {<Cardtwo />}
-      {/* {<Trusted />} */}
+      {<Trusted />}
 
 
 
