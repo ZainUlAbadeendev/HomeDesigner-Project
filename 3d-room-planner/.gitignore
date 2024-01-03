@@ -1,15 +1,14 @@
-node_modules/
-**/node_modules/
-
-static/
+*.sublime-workspace
+node_modules
+static
 *.DS_Store
-build/
+build
 *.sublime-project
 *.log
 
-.vscode/
-bin/
-doc/
-dist/
+.vscode
+bin
+doc
+dist
 example/js/blueprint3d.js
 example/js/three.min.js
