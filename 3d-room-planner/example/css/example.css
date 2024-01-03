@@ -1,0 +1,332 @@
+/*
+ * General Formatting
+ */
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+.main-row {
+  padding: 0;
+}
+
+.sidebar {
+  font-family: 'Proxima Nova', sans-serif;
+  padding: 20px;
+  overflow: hidden;
+  border-right: 1px solid #eee;
+  background-color: #316756;
+  /* Set the theme color */
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #428bca;
+}
+
+.nav-sidebar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.nav-sidebar>li {
+  margin-bottom: 5px;
+}
+
+.nav-sidebar>li>a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  /* Use white text color for better contrast */
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+  /* Add a slight border-radius for a modern look */
+}
+
+.nav-sidebar>li>a:hover,
+.nav-sidebar>li.active>a {
+  color: #316756;
+  /* Set the theme color for better visibility on hover and active states */
+  background-color: #fff;
+  /* Use white background color for better contrast on hover and active states */
+}
+
+.nav-sidebar>li>a:focus {
+  outline: none;
+}
+
+/* Active state styling */
+.nav-sidebar>li.active>a,
+.nav-sidebar>li.active>a:hover,
+.nav-sidebar>li.active>a:focus {
+  color: #316756;
+  /* Set the theme color for the active state */
+  background-color: #fff;
+  /* Use white background color for the active state */
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 0;
+}
+
+/*
+ * "Loading" modal
+ */
+
+#loading-modal {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(50, 50, 50, 0.9);
+}
+
+#loading-modal h1 {
+  text-align: center;
+  margin-top: 30%;
+  color: #fff;
+}
+
+/*
+ * Design
+ */
+
+#viewer {
+  display: none;
+}
+
+#floorplanner {
+  display: none;
+}
+
+#add-items {
+  display: none;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#main-controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+}
+
+#camera-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  padding: 0 20px;
+  text-align: right;
+}
+
+#floorplanner-controls {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 20px 0;
+  padding: 0 20px;
+  width: 100%;
+}
+
+#draw-walls-hint {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.50);
+  color: #ffffff;
+  padding: 5px 10px;
+  z-index: 10;
+  display: none;
+}
+
+.add-item {
+  cursor: pointer;
+}
+
+.btn-file {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  cursor: inherit;
+  display: block;
+}
+
+/* Logo container styling */
+.logo-container {
+  margin-top: auto;
+  /* Pushes the logo to the bottom of the sidebar */
+  text-align: center;
+  padding-top: 20px;
+  /* Adjust this value as needed for spacing */
+}
+
+/* Logo styling */
+.logo-container img {
+  width: 100px;
+  /* Set the width of the logo */
+  height: auto;
+  /* Maintain the aspect ratio */
+}
+
+/* Button container styling */
+.button-container {
+  text-align: center;
+  padding-top: 20px;
+  /* Adjust this value as needed for spacing */
+}
+
+/* Button styling */
+.button-container .btn {
+  background-color: #b3d3c1;
+  /* Lighter theme color */
+  color: #fff;
+  /* White text color */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for background color */
+  border: none;
+  /* Remove button border for a cleaner look */
+  padding: 10px 20px;
+  /* Adjust padding for better spacing */
+  border-radius: 5px;
+  /* Add a slight border-radius for a modern look */
+  cursor: pointer;
+  /* Change cursor on hover */
+}
+
+/* Hover effect for the button */
+.button-container .btn:hover {
+  background-color: #8fa09f;
+  /* Slightly darker theme color for hover effect */
+}
+
+
+
+/* Button styling */
+#main-controls .btn {
+  background-color: #316756;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* New Plan button */
+#main-controls #new:hover {
+  background-color: #00452a;
+}
+
+/* Save Plan button */
+#main-controls #saveFile:hover {
+  background-color: #00452a;
+}
+
+/* Load Plan button */
+#main-controls .btn-file:hover {
+  background-color: #00452a;
+}
+
+/* Input file style */
+#main-controls input[type="file"] {
+  position: absolute;
+  font-size: 100px;
+  font-family: 'Proxima Nova', sans-serif;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#main-controls .btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Additional style for active state of Load Plan button */
+#main-controls .btn-file.active {
+  background-color: #00452a;
+}
+
+/* Floorplanner buttons styling */
+#floorplanner-controls button {
+  background-color: #00452a;
+  color: #ffffff;
+  border: 1px solid #00452a;
+  font-family: 'Proxima Nova', sans-serif;
+  margin: 5px;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+
+#floorplanner-controls button:hover {
+  background-color: #002e1c;
+}
+
+#floorplanner-controls button span {
+  margin-right: 5px;
+}
+
+/* Update Floorplan button styling */
+#update-floorplan {
+  background-color: #00452a;
+  color: #ffffff;
+  border: 1px solid #00452a;
+  font-family: 'Proxima Nova', sans-serif;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+
+#update-floorplan:hover {
+  background-color: #002e1c;
+}
+
+/* Draw Walls Hint styling */
+#draw-walls-hint {
+  color: #555555;
+  font-family: 'Proxima Nova', sans-serif;
+  margin-top: 10px;
+}

@@ -13,6 +13,7 @@ import Cardone from "../components/Route/Cardone/Cardone.jsx";
 import Cardtwo from "../components/Route/Cardtwo/Cardtwo.jsx";
 import Cardthree from "../components/Route/Cardthree/Cardthree";
 import Cardfour from "../components/Route/Cardfour/Cardfour.jsx";
+import RoomPlanner from "../components/RoomPlanner/RoomPlanner";
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
       <Hero />
       {<Cardtwo />}
       {<Trusted />}
+      {< RoomPlanner />}
 
 
 
