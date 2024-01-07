@@ -14,23 +14,27 @@ import Cardtwo from "../components/Route/Cardtwo/Cardtwo.jsx";
 import Cardthree from "../components/Route/Cardthree/Cardthree.jsx";
 import Cardfour from "../components/Route/Cardfour/Cardfour.jsx";
 import RoomPlanner from "../components/RoomPlanner/RoomPlanner.jsx";
-
+import RoomPlannerSectionOne from "../components/RoomPlannerSectionOne/RoomPlannerSectionOne.jsx";
+import RoomPlannerSectionTwo from "../components/RoomPlannerSectionTwo/RoomPlannerSectionTwo.jsx";
+import RoomPlannerSectionThree from "../components/RoomPlannerSectionThree/RoomPlannerSectionThree.jsx";
+import RoomPlannerSectionFour from "../components/RoomPlannerSectionFour/RoomPlannerSectionFour.jsx";
 const RoomPlannerTool = () => {
     return (
         <div>
             <Header activeHeading={1} />
             <Hero />
-            {<Cardtwo />}
-            {<Trusted />}
-            {< RoomPlanner />}
+            {<RoomPlannerSectionOne />}
 
 
 
 
-            {<Cardfour />}
-            {<Cardone />}
+
+
+            {<RoomPlannerSectionTwo />}
+            {<RoomPlannerSectionThree />}
+            {<RoomPlannerSectionFour />}
             {<Cardthree />}
-
+            {< RoomPlanner />}
             {<Headone />}
             {/* <Categories />
       <BestDeals />

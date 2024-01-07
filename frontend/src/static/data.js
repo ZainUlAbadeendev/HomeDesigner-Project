@@ -22,10 +22,10 @@ export const navItems = [
   },
   {
     title: "Room Planner",
-    url: "/faq",
+    url: "/RoomPlannerPage",
   },
   {
-    title: "FAQ",
+    title: "Contact",
     url: "/faq",
   },
   {
