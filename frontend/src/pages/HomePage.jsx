@@ -14,6 +14,8 @@ import Cardtwo from "../components/Route/Cardtwo/Cardtwo.jsx";
 import Cardthree from "../components/Route/Cardthree/Cardthree";
 import Cardfour from "../components/Route/Cardfour/Cardfour.jsx";
 import RoomPlanner from "../components/RoomPlanner/RoomPlanner";
+import Features from "../components/Features/Features.jsx";
+import SectionLast from "../components/SectionLast/SectionLast.jsx";
 
 const HomePage = () => {
   return (
@@ -22,7 +24,7 @@ const HomePage = () => {
       <Hero />
       {<Cardtwo />}
       {<Trusted />}
-      {< RoomPlanner />}
+
 
 
 
@@ -31,13 +33,15 @@ const HomePage = () => {
       {<Cardone />}
       {<Cardthree />}
 
-      {<Headone />}
+      {/* {<Headone />} */}
+      {<Features />}
+      {<SectionLast />}
       {/* <Categories />
       <BestDeals />
       <Events />
       <Sponsored /> */}
-      {/* <Footer /> */}
-
+      <Footer />
+      {/* {< RoomPlanner />} */}
     </div>
   )
 }

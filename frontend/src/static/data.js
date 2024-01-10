@@ -16,20 +16,21 @@ export const navItems = [
     title: "Events",
     url: "/events",
   },
-  {
-    title: "FAQ",
-    url: "/faq",
-  },
+
   {
     title: "Room Planner",
     url: "/RoomPlannerPage",
   },
   {
-    title: "Contact",
+    title: "About",
     url: "/faq",
   },
   {
     title: "FAQ",
+    url: "/faq",
+  },
+  {
+    title: "Contact",
     url: "/faq",
   },
 ];

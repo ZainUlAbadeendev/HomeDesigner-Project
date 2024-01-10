@@ -330,3 +330,18 @@ div {
   font-family: 'Proxima Nova', sans-serif;
   margin-top: 10px;
 }
+
+#context-menu {
+  transform: scaleX(-1);
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.mirror-content {
+  transform: scaleX(-1);
+}
+
+.mirror-text {
+  transform: scaleX(-1);
+}

@@ -7,7 +7,7 @@ const ShopHero = () => {
     <div
       className={`relative min-h-[70vh] 800px:min-h-[80vh] w-full bg-no-repeat ${styles.noramlFlex}`}
       style={{
-        backgroundImage: "url(https://i.ibb.co/9wMy3RN/banner-2.png)",
+        backgroundImage: "url(https://i.ibb.co/dJNHbxk/photo-1616047006789-b7af5afb8c20.jpg)",
         backgroundSize: "cover", // Change this line to "cover" for full width
       }}
     >

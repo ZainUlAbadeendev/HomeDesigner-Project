@@ -18,6 +18,7 @@ import OrderDetailsPage from "../pages/OrderDetailsPage";
 import TrackOrderPage from "../pages/TrackOrderPage";
 import UserInbox from "../pages/UserInbox.jsx";
 import RoomPlannerPage from "../pages/RoomPlannerPage.jsx";
+import ContactPage from "../pages/ContactPage.jsx";
 
 export {
     LoginPage,
@@ -39,5 +40,6 @@ export {
     OrderDetailsPage,
     TrackOrderPage,
     UserInbox,
-    RoomPlannerPage
+    RoomPlannerPage,
+    ContactPage
 };

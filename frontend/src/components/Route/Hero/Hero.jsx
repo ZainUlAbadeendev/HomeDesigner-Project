@@ -15,11 +15,12 @@ const Hero = () => {
         <h1
           className={`text-[35px] leading-[1.2] 800px:text-[60px] text-[#ffffff] font-[600] capitalize`}
         >
-          Collection for Interior Design
+
+          Simplify: Dreaming, Creating.
         </h1>
-        <p className="pt-5 text-[16px] font-[Poppins] font-[400] text-[#ffffff] ">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />{" "}
-          exercitationem labore vel, dolore quidem asperiores, consequatur{" "}
+        <p className="pt-5 text-[18px] font-[Poppins] font-[400] text-[#ffffff] text-opacity-80">
+          We simplify the art of interior design. With the 'Crafting Dreams,  <br />{" "}
+          our platform makes it easy to turn your visions into living spaces. {" "}
           <br />
         </p>
         <Link to="/products" className="inline-block">
